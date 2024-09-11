@@ -9,7 +9,7 @@ Features
 
 Technologies Used
 - React
-- Axios (or Fetch API) for API calls
+- Fetch API for API calls
 - React Bootstrap (optional) for styling and responsiveness
 
 NASA API Key
@@ -40,12 +40,13 @@ Project Structure
 ├── public
 ├── src
 │   ├── components
-│   │   └── ApodViewer.jsx  # Component responsible for fetching and displaying APOD
+│   │   └── Footer.jsx      # The Footer component for displaying the Project Name and Title of the Image
+│   │   └── Main.jsx        # The Main component for displaying the Image
+│   │   └── SideBar.jsx     # The Side bar component for displaying the Title, Date and Description of the Image
 │   ├── App.jsx             # Main app component
-│   ├── index.js            # React entry point
-│   └── api                 # Folder for API calls
-│       └── nasaApi.js      # NASA API logic
-├── .env                    # Environment variables
+│   ├── index.css           # Main css
+│   └── main.jsx            # Folder for API calls
+├── .env                    # Environment variables ( contains the actual API Key )
 ├── package.json            # Project metadata and dependencies
 └── README.md               # This file
 ```
